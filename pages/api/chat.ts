@@ -1,4 +1,4 @@
-import { Message } from "@/types/types";
+import { Message } from "@/types";
 import { OpenAIStream } from "@/utils";
 
 export const config = {

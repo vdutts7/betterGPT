@@ -95,7 +95,7 @@ export default function Home() {
         role: "assistant",
         content: `I'm Vivek's GPT UI ~ built on chatGPT.
 I am a human.
-Cry about it, I'll cry with you.`,
+Cry about it, I'll cry with you too.`,
       },
     ]);
   }, []);
