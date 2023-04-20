@@ -1,7 +1,7 @@
 import { Chat } from "@/components/Chat/Chat";
 import { Footer } from "@/components/Layout/Footer";
 import { Navbar } from "@/components/Layout/Navbar";
-import { Message } from "@/types";
+import { Message } from "@/types/types";
 import Head from "next/head";
 import { useEffect, useRef, useState } from "react";
 
@@ -24,11 +24,11 @@ export default function Home() {
     const response = await fetch("/api/chat", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        messages: updatedMessages
-      })
+        messages: updatedMessages,
+      }),
     });
 
     if (!response.ok) {
@@ -60,15 +60,15 @@ export default function Home() {
           ...messages,
           {
             role: "assistant",
-            content: chunkValue
-          }
+            content: chunkValue,
+          },
         ]);
       } else {
         setMessages((messages) => {
           const lastMessage = messages[messages.length - 1];
           const updatedMessage = {
             ...lastMessage,
-            content: lastMessage.content + chunkValue
+            content: lastMessage.content + chunkValue,
           };
           return [...messages.slice(0, -1), updatedMessage];
         });
@@ -80,8 +80,8 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: `Hi there! I'm Chatbot UI, an AI assistant. I can help you with things like answering questions, providing information, and helping with tasks. How can I help you?`
-      }
+        content: `I'm Vivek's Sexy UI GPT. I am a human. Cry about it, I'll cry with you. Now how can I be of assistance?`,
+      },
     ]);
   };
 
@@ -93,27 +93,23 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: `Hi there! I'm Chatbot UI, an AI assistant. I can help you with things like answering questions, providing information, and helping with tasks. How can I help you?`
-      }
+        content: `I'm Vivek's GPT UI ~ built on chatGPT.
+I am a human.
+Cry about it, I'll cry with you.`,
+      },
     ]);
   }, []);
 
   return (
     <>
       <Head>
-        <title>Chatbot UI</title>
+        <title>Vivek's GPT UI</title>
         <meta
           name="description"
-          content="A simple chatbot starter kit for OpenAI's chat model using Next.js, TypeScript, and Tailwind CSS."
+          content="A sexier interface, built using the trifecta of Next.js x TypeScript x Tailwind CSS."
         />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1"
-        />
-        <link
-          rel="icon"
-          href="/favicon.ico"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className="flex flex-col h-screen">
