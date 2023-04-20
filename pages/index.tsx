@@ -103,7 +103,7 @@ Cry about it, I'll cry with you.`,
   return (
     <>
       <Head>
-        <title>Vivek's GPT UI</title>
+        <title>Vivek&apos;s GPT UI</title>
         <meta
           name="description"
           content="A sexier interface, built using the trifecta of Next.js x TypeScript x Tailwind CSS."
