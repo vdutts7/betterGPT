@@ -1,3 +1,75 @@
+
+textarea::placeholder {
+  font-size: 18px;
+}
+
+:root {
+  --background: 224 71% 4%;
+  --foreground: 213 31% 91%;
+
+  --muted: 223 47% 11%;
+  --muted-foreground: 215.4 16.3% 56.9%;
+
+  --popover: 224 71% 4%;
+  --popover-foreground: 215 20.2% 65.1%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 47.4% 11.2%;
+
+  --border: 216 34% 17%;
+  --input: 216 34% 17%;
+
+  --primary: 210 40% 98%;
+  --primary-foreground: 222.2 47.4% 1.2%;
+
+  --secondary: 222.2 47.4% 11.2%;
+  --secondary-foreground: 210 40% 98%;
+
+  --accent: 216 34% 17%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 210 40% 98%;
+
+  --ring: 216 34% 17%;
+
+  --radius: 0.5rem;
+
+  /* New custom style for button in ChatInput component */
+  --button-bg: linear-gradient(to bottom right, #6366f1, #7c3aed);
+  --button-bg-hover: linear-gradient(to bottom right, #4b4dff, #8d2df2);
+  --button-text: #ffffff;
+  --button-text-hover: #ffffff;
+}
+
+/* Base styles */
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-background text-foreground;
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+/* Tailwind styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom styles */
+@layer utilities {
+  .button-primary {
+    @apply py-2 px-4 rounded-md text-base font-medium text-white bg-gradient-to-br from-button-bg to-button-bg-hover hover:from-button-bg-hover hover:to-button-bg;
+  }
+
+  .button-primary:hover {
+    @apply bg-gradient-to-br from-button-bg-hover to-button-bg;
+  }
+
+  .chat-container {
+    @apply bg-zinc-300;
+  }
+
+
+}
