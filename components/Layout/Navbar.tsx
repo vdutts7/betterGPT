@@ -14,10 +14,20 @@ export const Navbar: FC = () => {
   return (
     <div className="flex h-[50px] sm:h-[60px] border-b border-neutral-300 py-2 px-2 sm:px-8 items-center justify-between">
       <div className="font-bold text-3xl flex items-center">
+
+      <img
+          src="https://raw.githubusercontent.com/vdutts7/dump/main/assets/_bettergpt-logo.png"
+          alt=""
+          width="100px"
+          // style={{ marginLeft: "100px", marginTop: "-110px" }}
+        />
         <a className="ml-2 hover:opacity-50" href="https://vdutts7.com">
-          <h1 className="bg-gradient-to-br from-rose-100 to-black-100 text-transparent bg-clip-text">
-            Vivek
-          </h1>
+          {/* <h1 className="bg-gradient-to-br from-rose-100 to-black-100 text-transparent bg-clip-text">
+            vdutts7
+          </h1> */}
+
+
+
         </a>
       </div>
       <div className="flex items-center">

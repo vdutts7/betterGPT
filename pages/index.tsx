@@ -1,3 +1,4 @@
+import { APIKeyInput } from "@/components/API-Key-Input";
 import { Chat } from "@/components/Chat/Chat";
 import { Footer } from "@/components/Layout/Footer";
 import { Navbar } from "@/components/Layout/Navbar";
@@ -5,12 +6,13 @@ import { Message } from "@/types";
 import Head from "next/head";
 import { useEffect, useRef, useState } from "react";
 
+
 export default function Home() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
-
+  // const apikey = APIKeyInput;
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -80,7 +82,7 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: `I'm Vivek's Sexy UI GPT. I am a human. Cry about it, I'll cry with you. Now how can I be of assistance?`,
+        content: `I'm vdutts7's UI for GPT, because the interface used to suck. I am a human. I pass Turing Test.`,
       },
     ]);
   };
@@ -93,9 +95,7 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: `I'm Vivek's GPT UI ~ built on chatGPT.
-I am a human.
-Cry about it, I'll cry with you too.`,
+        content: `I was made by vdutts7. How can I assist ya`,
       },
     ]);
   }, []);
@@ -103,7 +103,7 @@ Cry about it, I'll cry with you too.`,
   return (
     <>
       <Head>
-        <title>Vivek&apos;s GPT UI</title>
+        <title>betterGPT by vdutts7</title>
         <meta
           name="description"
           content="A sexier interface, built using the trifecta of Next.js x TypeScript x Tailwind CSS."
@@ -116,6 +116,9 @@ Cry about it, I'll cry with you too.`,
         <Navbar />
 
         <div className="flex-1 overflow-auto sm:px-10 pb-4 sm:pb-10">
+          {/* <APIKeyInput apiKey={""} onChange={function (apiKey: string): void {
+            throw new Error("Function not implemented.");
+          } }/> */}
           <div className="max-w-[800px] mx-auto mt-4 sm:mt-12">
             <Chat
               messages={messages}
