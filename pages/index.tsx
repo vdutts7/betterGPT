@@ -103,7 +103,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>betterGPT by vdutts7</title>
+        <title>betterGPT • vdutts7</title>
         <meta
           name="description"
           content="A sexier interface, built using the trifecta of Next.js x TypeScript x Tailwind CSS."
