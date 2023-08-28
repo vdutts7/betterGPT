@@ -15,7 +15,7 @@ export const Footer: FC = () => {
           </a>
         </span>
           Access the source code
-          <a href="https://github.com/vdutts7/yt-ai-chat" target="_blank" rel="noopener noreferrer" className="text-rose-300  
+          <a href="https://github.com/vdutts7/betterGPT" target="_blank" rel="noopener noreferrer" className="text-rose-300  
           hover:font-bold"> here.</a>
       </p>
     </div>;
