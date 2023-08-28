@@ -32,11 +32,11 @@ export const Navbar: FC = () => {
       
       <div className="flex items-right text-white ">
         <div className="flex items-center">     
-         <a href="https://github.com/vdutts7/yt-chat-mkbhd" target="_blank" rel="noreferrer">
-           <MarkGithubIcon className="h-7 w-7 hover:text-red-600" />   
+         <a href="https://github.com/vdutts7/betterGPT" target="_blank" rel="noreferrer">
+           <MarkGithubIcon className="h-7 w-7 hover:text-rose-600" />   
          </a>
          <a href="https://twitter.com/vdutts7" target="_blank" rel="noreferrer">
-            <IconBrandTwitter className="h-7 w-7 mx-2 hover:text-red-600"/>
+            <IconBrandTwitter className="h-7 w-7 mx-2 hover:text-rose-600"/>
          </a>
         </div>          
       </div>
