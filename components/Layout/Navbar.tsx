@@ -10,9 +10,9 @@ export const Navbar: FC = () => {
      
       
       <div className="flex items-left">
-        <a href="/">
+        <span>
           <img src="https://raw.githubusercontent.com/vdutts7/dump/main/assets/_bettergpt-logo.png" alt="" width="100px" className="h-12"/>
-        </a>
+        </span>
         <div className="text-white mt-2 ml-4 font-bold text-lg flex items-center">
           <span className="title-text">BetterGPT ⚡️</span> 
         </div>
