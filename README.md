@@ -4,7 +4,7 @@
         BetterGPT
     </h1>
     <p align="center"> 
-        <i><b>Styled UI for a cleaner chat experience.</b></i>
+        <i><b>Styled UI for a cleaner chat experience. </b></i>
         <br /> 
     </p>
 
